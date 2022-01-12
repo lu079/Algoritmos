@@ -1,0 +1,122 @@
+// ALGORITMOS
+
+//1.
+Algoritmo Mayor_menor
+		a<-0
+		b<-0 
+		c<-0
+		Mostrar  "valor de los numeros"
+		Leer a,b,c 
+		
+		// EL NUMERO MAYOR ES 
+		Si a  > b Y a > c Entonces
+			Escribir "el valor mayor es el primero:" ,a
+		SiNo
+			Si b> a Y b > c 
+				Escribir " el valor mayor es el primero:" ,b
+			SiNo
+				Si c > a Y c > b Entonces
+					Escribir " el valor  mayor es el tercero:",c
+				SiNo
+				FinSi
+			FinSi
+		FinSi
+		// el numero menor es:
+		Si  a < b Y a < c Entonces
+			Escribir " el valor es menor al primero:",a
+		SiNo
+			Si  b < a Y b < c Entonces
+				Escribir " el valor es menor al segundo :",b
+			SiNo
+				Si c < a Y c < b Entonces
+					Escribir " el vaor menor es el tercero:" ,c
+				FinSi
+			FinSi
+		FinSi
+FinAlgoritmo
+
+
+//2. 
+Algoritmo sumatoria
+		sum <-0
+		Escribir "Ingrese el valor n"
+		Leer n
+		Para i<-1 Hasta 4 Con Paso  1 Hacer
+			value <- (2*n-1)
+			cadena_compuesta<- concatenar("cadena","value")
+			sum <- sum +value
+			Escribir sum
+		Fin Para
+FinAlgoritmo
+
+
+//3. 
+Algoritmo Triangulo_rectangulo
+		pared <- 0
+		escalera <- 0
+		
+		Escribir "Ingrese el tamaño de la pared"
+		Leer pared
+		Escribir "Ingrese la distancia entre la base de la escalera y la pared "
+		Leer escalera
+		
+		H <- (pared ^ 2 + escalera ^ 2)^ 0.5
+		
+		Escribir "La hipotenusa entre la pared y la escalera es de :" ,H
+
+FinAlgoritmo
+
+
+//4.
+Algoritmo Calificaciones
+		Escribir "Ingresa tu nota"
+		Leer N
+		
+		Si n > 0 Y n < 21 Entonces
+			Si n <= 9 Entonces
+				Escribir "Calificación E: Nota muy baja. Necesitas refuerzo urgentemente"
+				
+			SiNo
+				Si n <=12 Entonces
+					Escribir "Calificación D: Nota baja. Necesitas refuerzo"
+				SiNo
+					Si n <= 15 Entonces
+						Escribir "Calificación C: Puede esforzarse más."
+					SiNo
+						Si n <= 18 Entonces
+							Escribir "Calificación B: Bien. Continúa esforzandote"
+						SiNo
+							Escribir "Calificación A: Excelente, felicidades. Continúa así."
+						FinSi
+					FinSi
+				FinSi
+				
+			FinSi
+		FinSi
+FinAlgoritmo
+
+
+//5. 
+Algoritmo ordenar_numeros
+		A <- 0
+		B <- 0
+		
+		Repetir
+			Escribir "Ingresa los valores que necesitas ordenar"
+			Leer A, B
+			
+			Si A > B y A <> B Entonces 
+				Escribir "El número mayor es: ", B, " El número mayor es: ", A 
+			SiNo
+				Escribir "El número menor es: ", A, " El número mayor es: ", B
+			FinSi
+			Escribir "Desea continuar ordenando valores?"
+			Escribir "1. Si, deseo continúar."
+			Escribir "2. No, deseo salir."
+			Leer respuesta;
+			
+		Hasta Que respuesta <> 1
+			
+
+FinAlgoritmo
+
